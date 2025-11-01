@@ -1,0 +1,7 @@
+[project]
+name = "mout"
+version = "0.0.1.dev0"
+description = "A simple AI model router."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
