@@ -1,21 +1,21 @@
 <div align="center">
-  <h1><code>m0ut</code></h1>
+  <h1><code>r0uter</code></h1>
   <p>A simple and fast AI model router.</p>
 </div>
 
 ---
 
 > [!WARNING]
-> **m0ut is under active development.**
+> **r0uter is under active development.**
 > The project is not yet fully functional and may not work as expected out of the box.
-> If you'd like to contribute, feel free to open a [pull request](https://github.com/Fastiraz/m0ut/pulls).
-> Found a bug, vulnerability, or something unusual? Please open an [issue](https://github.com/Fastiraz/m0ut/issues).
+> If you'd like to contribute, feel free to open a [pull request](https://github.com/Fastiraz/r0uter/pulls).
+> Found a bug, vulnerability, or something unusual? Please open an [issue](https://github.com/Fastiraz/r0uter/issues).
 
 ---
 
-## What is `m0ut`?
+## What is `r0uter`?
 
-`m0ut` is a simple and fast model router for LLMs. The goal is to build a routing engine using a tiny classification model that will take a string a input and map tags to a large language model.
+`r0uter` is a simple and fast model router for LLMs. The goal is to build a routing engine using a tiny classification model that will take a string a input and map tags to a large language model.
 
 | Prompt | Tag | Model |
 | --- | --- | --- |
