@@ -28,15 +28,17 @@ class Result:
 
 
 class Router:
-  def __init__(self, map: dict | None = None):
+  def __init__(self, map: dict | None = None, cache_dir: str | None = None):
     self.sequence: str
     self.tags: list[str] = []
     self.models: list[str] = []
     self.map: dict | None = map
     self.classifier_model: str = "facebook/bart-large-mnli"
+    self.cache_dir: str | None = cache_dir
     self.classifier = pipeline(
-      "zero-shot-classification",
-      model=self.classifier_model
+      task="zero-shot-classification",
+      model=self.classifier_model,
+      model_kwargs={"cache_dir": self.cache_dir}
     )
 
 
@@ -119,7 +121,7 @@ def main() -> None:
     tags[3]: models[3]
   }
 
-  router = Router(map)
+  router = Router(map, cache_dir="~/.r0uter/models")
 
   prompts = [
     "What's 13+37?",
